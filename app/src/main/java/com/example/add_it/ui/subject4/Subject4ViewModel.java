@@ -1,16 +1,16 @@
-package com.example.add_it.ui.slideshow;
+package com.example.add_it.ui.subject4;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class Subject4ViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public Subject4ViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("Chemistry Calculator");
     }
 
     public LiveData<String> getText() {

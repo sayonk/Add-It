@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_subject1">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.add_it.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
+        android:id="@+id/nav_subject1"
+        android:name="com.example.add_it.ui.subject1.Subject1Fragment"
+        android:label="@string/menu_subject1"
+        tools:layout="@layout/fragment_subject1">
 
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            android:id="@+id/action_Subject1Fragment_to_HomeSecondFragment"
             app:destination="@id/nav_home_second" />
     </fragment>
     <fragment
         android:id="@+id/nav_home_second"
-        android:name="com.example.add_it.ui.home.HomeSecondFragment"
+        android:name="com.example.add_it.ui.subject1.HomeSecondFragment"
         android:label="@string/home_second"
         tools:layout="@layout/fragment_home_second">
         <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
+            android:id="@+id/action_HomeSecondFragment_to_Subject1Fragment"
+            app:destination="@id/nav_subject1" />
 
         <argument
             android:name="myArg"
@@ -30,14 +30,20 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.add_it.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_subject2"
+        android:name="com.example.add_it.ui.subject2.Subject2Fragment"
+        android:label="@string/menu_subject2"
+        tools:layout="@layout/fragment_subject2" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.add_it.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_subject3"
+        android:name="com.example.add_it.ui.subject3.Subject3Fragment"
+        android:label="@string/menu_subject3"
+        tools:layout="@layout/fragment_subject3" />
+
+    <fragment
+        android:id="@+id/nav_subject4"
+        android:name="com.example.add_it.ui.subject4.Subject4Fragment"
+        android:label="@string/menu_subject4"
+        tools:layout="@layout/fragment_subject4" />
 </navigation>

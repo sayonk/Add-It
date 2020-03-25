@@ -1,4 +1,4 @@
-package com.example.add_it.ui.gallery;
+package com.example.add_it.ui.subject1;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,17 +13,17 @@ import android.arch.lifecycle.ViewModelProviders;
 
 import com.example.add_it.R;
 
-public class GalleryFragment extends Fragment {
+public class Subject1Fragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private Subject1ViewModel subject1ViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        subject1ViewModel =
+                ViewModelProviders.of(this).get(Subject1ViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_subject1, container, false);
+        final TextView textView = root.findViewById(R.id.text_subject1);
+        subject1ViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
