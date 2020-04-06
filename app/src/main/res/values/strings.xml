@@ -12,5 +12,26 @@
     <string name="menu_subject3">Physics</string>
     <string name="menu_subject4">Chemistry</string>
 
+    <string name="subject1_1">Arithmetic</string>
+    <string name="subject1_2">Geometry</string>
+    <string name="subject1_3">Graphing</string>
+    <string name="subject2_1">Probability</string>
+    <string name="subject2_2">Data Analysis</string>
+    <string name="subject2_3">Distributions</string>
+    <string name="subject3_1">Dynamics</string>
+    <string name="subject3_2">Electricity</string>
+    <string name="subject3_3">Magnetics</string>
+    <string name="subject4_1">Nomenclature</string>
+    <string name="subject4_2">Stoichiometry</string>
+    <string name="subject4_3">Thermodynamics</string>
+
     <string name="home_second">Home Second</string>
+
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>20sp</item>
+        <item>40sp</item>
+        <item>100sp</item>
+    </array>
 </resources>
